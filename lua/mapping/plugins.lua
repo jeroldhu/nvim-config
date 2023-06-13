@@ -4,6 +4,9 @@ local map_cu = bind.map_cu
 local map_cmd = bind.map_cmd
 
 local plugin_mappings = {
+    -- personal
+	['n|<Leader>x'] = map_cr(':bd'):with_silent():with_noremap(),
+
 	-- packer
     ['n|<Leader>ps'] = map_cr('PackerSync'):with_silent():with_noremap(), -- 同步插件
     -- ['n|<Leader>pi'] = map_cr('PackerInstall'):with_silent():with_noremap(), -- 安装插件
