@@ -2,7 +2,7 @@ local config = function()
     local tree_cb = require'nvim-tree.config'.nvim_tree_callback
     require('nvim-tree').setup {
         open_on_tab = false,
-        disable_netrw = false,
+        disable_netrw = true,
         hijack_netrw = true,
         update_cwd = true,
         update_focused_file = {
@@ -14,7 +14,7 @@ local config = function()
             width = 30,
             side = 'left',
             mappings = {
-                custom_only = false,
+                custom_only = true,
                 -- list of mappings to set on the tree manually
                 list = {
                     -- {
@@ -25,7 +25,7 @@ local config = function()
                     -- {key = {"<2-RightMouse>", "<C-]>"}, cb = tree_cb("cd")},
                     -- {key = "<C-v>", cb = tree_cb("vsplit")},
                     -- {key = "<C-x>", cb = tree_cb("split")},
-                    -- {key = "<C-t>", cb = tree_cb("tabnew")},
+                    {key = "t", cb = tree_cb("tabnew")},
                     -- {key = "<", cb = tree_cb("prev_sibling")},
                     -- {key = ">", cb = tree_cb("next_sibling")},
                     -- {key = "P", cb = tree_cb("parent_node")},
