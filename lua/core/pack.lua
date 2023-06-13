@@ -28,7 +28,6 @@ local function startup_plugins()
         -- Packer can manage itself
         use {'wbthomason/packer.nvim', opt = true}
 
-        -- use {'nvim-lualine/lualine.nvim'}
         use {
             -- Tab页签功能
             'akinsho/bufferline.nvim',
@@ -36,10 +35,12 @@ local function startup_plugins()
             config = function() require("bufferline").setup {} end
         }
 
-        -- use {
-        --     'eddyekofo94/gruvbox-flat.nvim',
-        --     config = require('pconfigs.gruvbox_flat')
-        -- }
+        -- 美化页面
+        use {'nvim-lualine/lualine.nvim'}
+        use {
+            'eddyekofo94/gruvbox-flat.nvim',
+            config = require('pconfigs.gruvbox_flat')
+        }
 
         -- use {
         --     'neovim/nvim-lspconfig',
@@ -73,7 +74,7 @@ local function startup_plugins()
         --     'hrsh7th/vim-vsnip', -- Snippets plugin
         --         'hrsh7th/cmp-nvim-lsp', -- Source nvim lsp
         --         'hrsh7th/cmp-path', -- Completion for file path
-		-- 		'hrsh7th/cmp-buffer', -- Completion for buffer words
+        --      'hrsh7th/cmp-buffer', -- Completion for buffer words
         --     },
         --     config = require('pconfigs.complete')
         -- }
@@ -84,7 +85,7 @@ local function startup_plugins()
         --     config = function() require('go').setup() end
         -- }
 
-		-- use {'ray-x/lsp_signature.nvim'}
+        -- use {'ray-x/lsp_signature.nvim'}
 
         -- use {
         --     {'nvim-lua/plenary.nvim'},
@@ -119,7 +120,7 @@ local function startup_plugins()
         --   config = function() require('nvim-autopairs').setup{} end
         -- }
 
-        -- use {'kdheepak/lazygit.nvim'}
+        -- -- use {'kdheepak/lazygit.nvim'}
 
         -- TODO config
         -- use {"akinsho/toggleterm.nvim", config = function () require("toggleterm").setup{} end }
