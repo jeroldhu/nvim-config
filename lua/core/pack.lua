@@ -42,11 +42,11 @@ local function startup_plugins()
             config = require('pconfigs.gruvbox_flat')
         }
 
-        -- use {
-        --     'neovim/nvim-lspconfig',
-        --     event = 'BufReadPre',
-        --     config = require('pconfigs.lsp_config')
-        -- }
+        use {
+            'neovim/nvim-lspconfig',
+            event = 'BufReadPre',
+            config = require('pconfigs.lsp_config')
+        }
 
         -- use {
         --     'tami5/lspsaga.nvim',
