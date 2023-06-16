@@ -48,12 +48,13 @@ local function startup_plugins()
             config = require('pconfigs.lsp_config')
         }
 
-        -- use {
-        --     'tami5/lspsaga.nvim',
-        --     branch = 'nvim51',
-        --     cmd = 'Lspsaga',
-        --     config = require('pconfigs.lspsaga')
-        -- }
+        use {
+            -- lsp美化
+            'tami5/lspsaga.nvim',
+            branch = 'nvim51',
+            cmd = 'Lspsaga',
+            config = require('pconfigs.lspsaga')
+        }
 
         use {
             -- 全文检索
