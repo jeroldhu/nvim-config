@@ -57,8 +57,8 @@ local plugin_mappings = {
     -- ['n|<Leader><Leader>l'] = map_cr('HopLine'):with_silent():with_noremap(), -- 跳转到某行
 
     -- -- telescope
-    ['n|<leader>ff'] = map_cr('Telescope find_files'):with_silent():with_noremap(), -- 查找文件
-    ['n|<leader>fg'] = map_cr('Telescope live_grep'):with_silent():with_noremap(), -- 查找当前buffer内容
+    ['n|<S-f>'] = map_cr('Telescope find_files'):with_silent():with_noremap(), -- 查找文件
+    ['n|<C-f>'] = map_cr('Telescope live_grep'):with_silent():with_noremap(), -- 查找当前buffer内容
     ['n|<leader>fb'] = map_cr('Telescope buffers'):with_silent():with_noremap(), -- 查找buffer列表
     ['n|<leader>fh'] = map_cr('Telescope help_tags'):with_silent():with_noremap(), -- 帮助
 

@@ -72,10 +72,10 @@ local function startup_plugins()
         -- use {
         --     "hrsh7th/nvim-cmp",
         --     requires = {
-        --     'hrsh7th/vim-vsnip', -- Snippets plugin
+        --         'hrsh7th/vim-vsnip', -- Snippets plugin
         --         'hrsh7th/cmp-nvim-lsp', -- Source nvim lsp
         --         'hrsh7th/cmp-path', -- Completion for file path
-        --      'hrsh7th/cmp-buffer', -- Completion for buffer words
+        --         'hrsh7th/cmp-buffer', -- Completion for buffer words
         --     },
         --     config = require('pconfigs.complete')
         -- }

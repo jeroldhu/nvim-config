@@ -14,7 +14,7 @@ local config = function()
             width = 30,
             side = 'left',
             mappings = {
-                custom_only = true,
+                custom_only = false,
                 -- list of mappings to set on the tree manually
                 list = {
                     -- {
